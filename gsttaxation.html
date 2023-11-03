@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-sm">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.jpg" class="bg-primary" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-target="#mynav"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <p>
+            <i class="fa fa-mobile-phone" style="font-size: 24px"></i>
+            +91 7893106789<br />
+            <i class="fa fa-envelope" style="font-size: 15px"></i>
+            raghuaces@gmail.com
+          </p>
+        </div>
+        <div id="mynav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <span class="dropdown nav-link">Services
+              <li class="nav-item">
+              <ul class="dropbtn">
+                <li class="dropdown-content">
+                  <a href="gstinvoice.html" class="nav-link">GST Invoice Creation</a>
+                  <a href="gstregistration.html" class="nav-link">GST Registration</a>
+                  <a href="gstmonthlyfiling.html" class="nav-link">GST Monthly Filing Compliances</a>
+                  <a href="gstannualreturn.html" class="nav-link">GST Anual Return Filing Compliances</a>
+                  <a href="gstaudit.html" class="nav-link">GST Audit Services</a>
+                  <a href="repliestonotices.html" class="nav-link">Replies to notices</a>
+                  <a href="gstandincometaxappeals.html" class="nav-link">GST and Income Tax Appeals</a>
+                  <a href="appealstotribunalsandHC.html" class="nav-link">Appeals to Tribunals and High Courts</a>
+                </li></ul>
+          </li></span>
+            <li class="nav-item">
+              <a href="gstinvoice.html" class="nav-link">GST Invoice</a>
+            </li>
+            <li class="nav-item">
+              <a href="gsttaxation.html" class="nav-link">GST Tools</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://krrtaxmanagement.com/admin/index.php"
+                class="nav-link"
+                >Employee Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--Interest Calculation HTML END-->
+    <section
+      class="container-fluid justify-content-center align-items-center bg-primary d-inlineblock p-5"
+    >
+      <div class="row">
+        <div class="col-12 ol-sm-12 col-md-12 col-lg-6 col-xl-6 text-light">
+          <h1>Calculate Your Interest Amount:</h1>
+          <p>
+            M/s KRR Tax Management was established in 2014 and by young
+            dedicated professionals. Over the years the organization has grown
+            at a rapid pace in its size as well as capabilities.Providing Income
+            tax and compliance services since 2014.Providing cost effective &
+            process efficient services. Improvising the financial position of
+            our clients. Over the years the organization has grown at a rapid
+            pace in its size as well as capabilities.With a large number of
+            assignments handled till now,We has developed expertise in the areas
+            of Service Tax,Central Excise ,DGFT and Goods and Services Tax with
+            upfront transparent pricing approach and helping to business grow.
+            Over the years the organization has grown at a rapid pace in its
+            size as well as capabilities.Providing Income tax and compliance
+            services since 2014.Providing cost effective & process efficient
+            services. Improvising the financial position of our clients. Over
+            the years the organization has grown at a rapid pace in its size as
+            well as capabilities.With a large number of assignments handled till
+            now,We has developed expertise in the areas of Service Tax,Central
+            Excise ,DGFT and Goods and Services Tax with upfront transparent
+            pricing approach and helping to business grow.
+          </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 bg-dark p-5">
+          <form action="" onsubmit="return interestAmount()">
+            <div class="form-floating mb-5 text-light">
+              <button class="btn btn-success form-floating w-100">
+                Calculate Interest
+              </button>
+            </div>
+            <div class="row">
+              <div
+                class="form-floating mb-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+              >
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="username"
+                  class="form-control"
+                  required
+                />
+                <label>username</label>
+              </div>
+              <div
+                class="form-floating mb-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+                <label>Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="form-floating mb-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+              >
+                <input
+                  type="date"
+                  name="duedate"
+                  class="form-control"
+                  id="duedate"
+                  placeholder="Duedate"
+                  required
+                />
+                <label>Due date</label>
+              </div>
+              <div
+                class="form-floating mb-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+              >
+                <input
+                  type="date"
+                  name="dateoffiling"
+                  class="form-control"
+                  id="dateoffiling"
+                  placeholder="Dateoffiling"
+                  required
+                />
+                <label>Date of filing</label>
+              </div>
+              <div class="row">
+                <div class="form-floating mb-5 col-12 col-sm-12 col-md-6">
+                  <input
+                    type="number"
+                    name="igsttaxamount"
+                    id="igsttax"
+                    class="form-control"
+                    placeholder="IGST TaxAmount"
+                    required
+                  />
+                  <label>IGST Tax Amount</label>
+                </div>
+                <div class="form-floating mb-5 col-12 col-sm-12 col-md-6">
+                  <input
+                    type="number"
+                    name="cgsttaxamount"
+                    id="cgsttax"
+                    class="form-control"
+                    placeholder="CGST TaxAmount"
+                    required
+                  />
+                  <label>CGST Tax Amount</label>
+                </div>
+                <div class="form-floating mb-5 col-12 col-sm-12 col-md-6">
+                  <input
+                    type="number"
+                    name="cgsttaxamount"
+                    id="sgsttax"
+                    class="form-control"
+                    placeholder="SGST TaxAmount"
+                    required
+                  />
+                  <label>SGST Tax Amount</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-5">
+              <input type="submit" class="form-control btn btn-danger" />
+            </div>
+            <p id="result" class="text-white"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--Interest Calculation HTML END-->
+    <!--Interest Calculation JS Start-->
+    <script>
+      let interestAmount = () => {
+        let username = document.getElementById("username").value;
+        var date1 = document.getElementById("duedate").value;
+        var date2 = document.getElementById("dateoffiling").value;
+        alert(
+          "Welcome  " +
+            username +
+            "\nDate of filing  " +
+            date2 +
+            "\nDuedate  " +
+            date1
+        );
+        var date1 = new Date(date1);
+        var date2 = new Date(date2);
+        var tax1 = document.getElementById("igsttax").value;
+        var tax2 = document.getElementById("cgsttax").value;
+        var tax3 = document.getElementById("sgsttax").value;
+        var time_difference = date2.getTime() - date1.getTime();
+        var delaydays = time_difference / (1000 * 60 * 60 * 24);
+        if (delaydays > 0) {
+          var interest1 = (delaydays / 365) * (18 / 100) * tax1;
+          var interest2 = (delaydays / 365) * (18 / 100) * tax2;
+          var interest3 = (delaydays / 365) * (18 / 100) * tax3;
+          //  alert("Delaydays  " + delaydays+"\n\nIGST Interest Amount is  " +interest1.toFixed(2)+  "\nCGST Interest Amount is  " +interest2.toFixed(2)+  "\nSGST Interest Amount is  " +interest3.toFixed(2));
+          var result =
+            "Delaydays:   " +
+            delaydays +
+            ";\n\n   IGST Interest Amount is:  " +
+            interest1.toFixed(2) +
+            ";\n   CGST Interest Amount is:  " +
+            interest2.toFixed(2) +
+            ";\n   SGST Interest Amount is:  " +
+            interest3.toFixed(2);
+          document.getElementById("result").innerHTML = result;
+          return false;
+        } else {
+          document.getElementById("result").innerHTML= " Do not have any interest to Pay";
+          //document.getElementById("result").innerHTML="Do not have any interest to Pay ";
+          return false;
+        }
+      };
+    </script>
+    <!--Interest Calculation JS END-->
+    <!--KRR Tax Services-->
+    <section class="container-fluid bg-success mb-2 p-5">
+      <div class="container">
+        <h1 class="text-center">
+          Our <span style="color: rgb(37, 56, 92)">Services</span>
+        </h1>
+        <p class="text-start"></p>
+      </div>
+      <div class="container text-justify">
+        <div id="cardSlide" class="carousel slide" data-bs-ride="carousel">
+          <!--carousel indicators-->
+          <div class="carousel-indicators">
+            <button
+              data-bs-target="#cardSlide"
+              data-bs-slide-to="0"
+              class="active bg-danger"
+            ></button>
+            <button
+              data-bs-target="#cardSlide"
+              data-bs-slide-to="1"
+              class="bg-danger"
+            ></button>
+          </div>
+          <!--carousel items-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-4 col-sm-12">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="images/bg2.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">GST Returns</h5>
+                        <p class="card-text">
+                          GST return is a document that will contain all the
+                          details of your sales, purchases, tax collected on
+                          sales (output tax), and tax paid on purchases (input
+                          tax).
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-sm-12">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="images/e-Invoicing.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">GST e-Invoicing</h5>
+                        <p class="card-text">
+                          All business owners and dealers who have registered
+                          under the GST system must file GST returns according
+                          to the nature of their business or transactions.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-sm-12">
+                    <div class="card" style="width: 18rem">
+                      <img
+                        src="images/invoice1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">GST Registration</h5>
+                        <p class="card-text">
+                          GST Registration Requires specific documents. like
+                          photo, aadhaar, PAN Card, Electricity bill etc.. After
+                          submitting registration form we get it by 7 to 10
+                          working days.
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item cardSlide">
+              <div class="container">
+                <div class="card1-text">
+                  <div class="row">
+                    <div class="col-xl-4 col-sm-12">
+                      <div class="card" style="width: 18rem">
+                        <img
+                          src="images/e-Invoicing.png"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">GST Annual Returns</h5>
+                          <p class="card-text">
+                            Before filing GSTR 9, the taxpayer must file all
+                            GSTR-1, GSTR-3B, or GSTR 4 returns. In case of over
+                            dues, the GSTR registration holder will not be
+                            allowed to file an annual GST annual return.
+                          </p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12">
+                      <div class="card" style="width: 18rem">
+                        <img
+                          src="images/invoice.png"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">GST Audit Services</h5>
+                          <p class="card-text">
+                            Safety of our clients is the paramount measure we
+                            follows strict measures. After properly screening
+                            each of our drivers and employees, we train them
+                            before going on ground...
+                          </p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-sm-12">
+                      <div class="card" style="width: 18rem">
+                        <img
+                          src="images/bb1.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">GST Audit Services</h5>
+                          <p class="card-text">
+                            A GST Departmental Audit is conducted to ensure that
+                            a business is in compliance with GST laws and
+                            regulations. The GST Department may conduct an audit
+                            if it suspects that a business is not....
+                          </p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--KRR Tax Services end-->
+    <footer>
+      <section
+        class="container-fluid justify-content-center align-items-center bg-success d-inlineblock p-5"
+      >
+        <div class="row">
+          <div class="col-12 ol-sm-12 col-md-6 col-lg-3 col-xl-3 text-light">
+            <h4>About us</h4>
+            <p class="justify-content-center">
+              M/s KRR Tax Management was established in 2014 and by young
+              dedicated professionals. Over the years the organization has grown
+              at a rapid pace in its size as well as capabilities.
+            </p>
+          </div>
+          <div class="col-12 ol-sm-12 col-md-6 col-lg-3 col-xl-3 text-light">
+            <h4>Address</h4>
+            <p>
+              Flat.No-100<br />
+              Near RTC Bustand<br />
+              Shodhan Nagar<br />
+              Nellore.<br />
+              524003<br />
+              Andhrapradesh
+            </p>
+          </div>
+          <div class="col-12 ol-sm-12 col-md-6 col-lg-3 col-xl-3 text-light">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html" class="text-light">Home</a></li>
+              <li><a href="about.html" class="text-light">About us</a></li>
+              <li>
+                <a href="gstinvoice.html" class="text-light">GST Invoice</a>
+              </li>
+              <li>
+                <a href="gsttaxation.html" class="text-light">GST Taxation</a>
+              </li>
+              <li><a href="services.html" class="text-light">Services</a></li>
+              <li>
+                <a href="contactus.html" class="text-light">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 ol-sm-12 col-md-6 col-lg-3 col-xl-3 text-light">
+            <h4>Contact us</h4>
+            <br />
+            <p>
+              <i class="fa fa-mobile-phone" style="font-size: 24px"></i>
+              +91 7893106789<br />
+              <i class="fa fa-envelope" style="font-size: 15px"></i>
+              raghuaces@gmail.com
+              <li><a href="tel:+917893106789" style="color: white;">Call us</a></li>
+              <li><a href="mailto:raghuaces@gmail.com" style="color: white;">Mail To</a></li>
+  
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-b7455443-2a0b-4268-97a1-edd500ea169c" data-elfsight-app-lazy></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../BOOTSTRAP/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
